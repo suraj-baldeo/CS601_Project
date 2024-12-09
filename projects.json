@@ -1,0 +1,19 @@
+[
+    {
+        "Header" : "Blackjack",
+        "Image": "./images/Blackjack.png",
+        "Description": "A python implementation of, the popular card game, blackjack. A user can play blackjack against a dealer and their wins/losses were stored. To win blackjack the player’s cards must sum closer to 21 than the dealer. And the player may not have a card sum value of over 21."
+    },
+
+    {
+        "Header" : "8-Puzzle",
+        "Image": "./images/8-Puzzle.jpg",
+        "Description": "A python program that solves an 8-puzzle with the following algorithms: DFS, BFS, and Dijkstra."
+    },
+
+    {
+        "Header" : "Binary Search Tree",
+        "Image": "./images/BST.jpg",
+        "Description": "A C++ implementation of a binary search tree data structure. Data members and methods were created to implement the data structure. Some methods include: adding a node to the tree, removing a node from the tree, and searching for a node in the tree."
+    }
+]

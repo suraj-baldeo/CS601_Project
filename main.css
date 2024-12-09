@@ -1,0 +1,661 @@
+body {
+    margin: 0;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex; 
+    flex-direction: row;
+    background-color: black;
+    color: white;    
+}
+
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 200px;
+    flex-grow: 1;
+}
+
+header nav {
+    display: flex;
+    margin-top: 3px;
+    margin-right: 200px;
+}
+
+header nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: center;
+    font-size: large;
+}
+
+header nav a:hover {
+    color: orange;
+    text-decoration: underline;
+    text-underline-offset: 5px;  
+}
+
+.home-content main {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Times New Roman', serif;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.projects-content main h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    border-color: orange;
+    width: 500px;
+    align-self: center;
+    margin-bottom: 50px;
+
+}
+
+.projects-content main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.projects-content main .project-buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects-content main .project-buttons button{
+
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    background: white;
+    border: 3px solid;
+    border-color: orange;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.projects-content main .project-buttons button:hover {
+    background: orange;
+}
+
+.projects-content main .display-zone {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 500px;
+    margin: 30px;
+    align-self: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(52, 52, 52, 0.5);
+}
+
+.projects-content main .display-zone p{
+    margin: 30px;
+    line-height: 1.5;
+
+}
+
+.projects-content main .display-zone img {
+    align-self: center;
+    width: 350px;
+}
+
+@media (max-width: 1000px) {
+
+    .projects-content main .display-zone {
+        width: 450px;
+        height: 800px;
+    
+    }
+    
+    header {
+        display: none;
+    }
+
+    .projects-content main h1 {
+        display: none;
+    }
+}
+
+.contact-content main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: black;
+}
+
+.contact-content main h1 {
+    width: 500px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid;
+    border-color: orange;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.contact-content main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    border-color: white;
+
+}
+
+.contact-content main form h2{
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}    
+
+.contact-content main form .name {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.contact-content main form .name .form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-content main form .name .form-group input{
+    width: 250px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.contact-content main form .email-phone {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.contact-content main form .email-phone .form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.contact-content main form .email-phone .form-group input {
+    font-weight: bold;
+    width: 250px;
+    height: 30px;
+}
+
+.contact-content main form .message-input .form-group {
+    color: white;
+    margin: 30px;
+    font: medium;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.contact-content main form .message-input .form-group textarea {
+    font-weight: bold;
+    width: 500px;
+    height: 100px;
+}
+
+.contact-content main form button{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace; 
+
+}
+
+.contact-content main form button:hover{
+    background: orange;
+    cursor: pointer;
+
+}
+
+.contact-content main form .errors p{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.contact-content main .success{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+.work-content main {
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+.work-content main h1 {
+    align-self: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    width: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid;
+    border-color: orange;
+}
+
+.work-content main div h3 {
+    color: orange;
+    margin: 20px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.work-content main div h2 {
+    margin: 20px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.work-content main div h4 {
+    color: rgb(184, 180, 180);
+    margin: 20px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    
+}
+
+.work-content main div p{
+    color: rgb(184, 180, 180);
+    margin: 20px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.work-content main div ul{
+    color: rgb(184, 180, 180);
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.work-content main .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.work-content main .main-content div {
+    width: 500px;
+    height: 650px;
+    margin: 30px;
+    color: white;
+    background-color: rgba(52, 52, 52, 0.5);
+    
+}
+
+.interests-content main {
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+.interests-content main h1 {
+    align-self: center;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid;
+    border-color: orange;
+    color: white;
+}
+
+.interests-content main p {
+    text-align: center;
+    color: white;
+    margin: 40px;
+    padding-bottom: 50px;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.interests-content main .photo-gallery {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-self: center;
+    gap: 10px;
+
+}
+
+.interests-content main .photo-gallery .float-image {
+    flex: 1;
+
+}
+
+.interests-content main .photo-gallery .float-image img{
+    padding-bottom: 20px;
+    width: 100%;  
+}
+
+.interests-content main .photo-gallery .float-image img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.education-content main {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+
+}
+
+.education-content main h1 {
+    align-self: center;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid;
+    border-color: orange;
+    color: white;
+}
+
+.education-content main h4 {
+    padding-top: 20px;
+    font-size: xx-large;
+    align-self: center;
+    font-weight: bolder;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.education-content main .timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid orange;
+    padding-left: 50px;
+    margin: 0px 300px 100px 300px;
+}
+
+.education-content main .timeline .timeline-event {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border: 3px solid;
+    border-color: white;
+    border-radius: 10px;
+    background-color:  rgba(52, 52, 52, 0.5);
+}
+
+.education-content main .timeline .timeline-event:hover {
+    box-shadow: 0 0 25px orange;
+    border: 3px solid orange;
+}
+
+.education-content main .timeline .timeline-event::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: orange;
+    border-radius: 50%;
+    left: -67px;
+    top: 0px;
+    
+}
+
+.education-content main .timeline .timeline-event h2 {
+    margin: 20px;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.education-content main .timeline .timeline-event h3 {
+    margin: 20px;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+
+}
+
+.education-content main .timeline .timeline-event p {
+    margin: 20px;
+    font-size: medium;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.education-content main .blocker {
+    align-self: center;
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.education-content main .skills {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    align-self: center;
+    width: 700px;
+    background-color: rgba(52, 52, 52, 0.5);
+    box-shadow: 0px 0px 25px orange;
+}
+
+.education-content main .skills .skill-name {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.education-content main .skills .bar{
+
+    width: 80%;
+    background: white;
+    margin: 0px 20px 20px 20px;
+    border-radius: 15px;
+
+}
+
+.education-content main .skills .bar .fill-python {
+    text-align: center;
+    color: black;
+    width: 90%;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 15px;
+
+
+}
+
+.education-content main .skills .bar .fill-cplusplus {
+    text-align: center;
+    color: black;
+    width: 85%;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+.education-content main .skills .bar .fill-html {
+    text-align: center;
+    color: black;
+    width: 75%;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+.education-content main .skills .bar .fill-css {
+    text-align: center;
+    color: black;
+    width: 75%;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+.education-content main .skills .bar .fill-javascript {
+    text-align: center;
+    color: black;
+    width: 70%;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+.home-content main h1 {
+
+    margin: 100px 100px 20px 300px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home-content main .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 200px 100px 300px;
+    gap: 40px;
+}
+
+.home-content main .wrapper p{
+    padding-right: 150px;
+    font-size: large;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.home-content main .wrapper img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px orange;
+}
+
+@media (max-width: 1000px){
+
+    .work-content main .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    
+    }
+
+    .work-content main .main-content div {
+        width: 400px;
+        height: 700px;
+        align-self: center;
+    }
+
+    header {
+        display: none;
+    }
+
+    .work-content main h1 {
+        display: none;
+    }
+
+    .interests-content main h1 {
+        display: none;
+    }
+
+    .home-content main h1 {
+        margin: 0px;
+    }
+
+    .home-content main .wrapper{
+        margin: 0px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-content main h1 {
+        display: none;
+    }
+
+    .contact-content main form .name {
+        flex-direction: column;
+    }
+
+    .contact-content main form .email-phone {
+        flex-direction: column;
+    }
+
+    .contact-content main form .message-input .form-group textarea {
+        font-weight: bold;
+        width: 300px;
+        height: 200px;
+    }
+
+    .education-content main h1 {
+        display: none;
+    }
+
+    .education-content main .timeline {
+        margin: 10px;
+    }
+
+    .education-content main .skills {
+        width: 400px;
+    }
+}

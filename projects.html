@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="projects-content">
+        <header>
+            <h1>Suraj Baldeo</h1>
+            <nav>
+                <a href="index.html">Home</a></li>
+                <a href="contact.html">Contact</a></li>
+                <a href="education.html">Education</a></li>
+                <a href="interests.html">Interests</a></li>
+                <a href="projects.html">Projects</a></li>
+                <a href="work.html">Work</a></li>
+            </nav>
+
+        </header>
+
+        <main>
+            <h1>Projects</h1>
+
+            <div class="project-buttons">
+                <button id="blackjack" onclick="showProject('Blackjack')">Blackjack</button>
+                <button id="puzzle" onclick="showProject('8-Puzzle')">8-Puzzle</button>
+                <button id="bst" onclick="showProject('Binary Search Tree')">Binary Search Tree</button>
+            </div>
+
+            <div class="display-zone" id="displayZone">
+                <h2 id="displayZoneHeader">This is the Project Display Area</h2>
+                <img id="displayZoneImage">   
+                <p id="displayZoneDescription">Select a button above to view projects that I have implemented.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 My Website</p>
+        </footer>
+    </div>
+</body>
+
+</html>
